@@ -7,12 +7,16 @@
 </head>
 
 <style>
-
         /* 전체 스타일 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        /* 💡 추가: 메뉴 클릭 시 화면이 부드럽게 스크롤되도록 설정 */
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -75,12 +79,14 @@
             margin: 30px auto;
         }
 
+        /* 💡 수정: 스크롤 이동 시 헤더나 네비바에 제목이 가려지지 않도록 여백(Padding) 조정 */
         section {
             background-color: white;
             padding: 25px;
             margin-bottom: 30px;
             border-radius: 15px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            scroll-margin-top: 20px; 
         }
 
         section h2 {
@@ -272,9 +278,9 @@
 
     <nav>
         <ul>
-            <li><a href ="">검색하기</a></li> <!--나중에 추가-->
-            <li><a href ="">지도보기</a></li> <!--나중에 추가-->
-            <li><a href ="">목록보기</a></li> <!--나중에 추가-->
+            <li><a href="#search-section">검색하기</a></li> 
+            <li><a href="#map-section">지도보기</a></li> 
+            <li><a href="#list-section">목록보기</a></li> 
         </ul>
     </nav>
 
@@ -338,13 +344,11 @@
         </section>
 
     </main>
+    <br><br><br><br><br> <br><br><br><br><br>
 
     <footer>
         <p>&copy; 202655478 이유진 - 인터넷과 웹기초 텀프로젝트</p>
     </footer>
 
-    <script src=""></script> <!--나중에 추가-->
-    <script src=""></script> <!--나중에 추가-->
-
-</body>
+    <script src=""></script> <script src=""></script> </body>
 </html>
